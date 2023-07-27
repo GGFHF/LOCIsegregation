@@ -58,23 +58,23 @@ dplyr, ggvenn, tidyverse, LinkageMapView
 It also sets the working directories. IMPORTANT: Run this script before running the others.
 
 1-Chi2-test-adults.R
-This script computes the Chi-square test for all the biallelic imputed and non-imputed SNP found in the adult hybrids (EFS), Q. Ilex (EN) and Q. Suber (AL) according to the expected genotypic frequencies computed from the allelic frequencies and to the observed genotypic frequencies (0/0, 0/1, 1/1, 0/99, 99/99). Results for all SNP are stored in the directory prompted by the WD.output.1 defined by the user.
+This script computes the Chi-square test for all the biallelic imputed and non-imputed loci found in the adult hybrids (EFS), Q. Ilex (EN) and Q. Suber (AL) according to the expected genotypic frequencies computed from the allelic frequencies and to the observed genotypic frequencies (0/0, 0/1, 1/1, 0/99, 99/99). Results for all loci are stored in the directory prompted by the WD.output.1 defined by the user.
 
 2-Chi2-test-suber-ilex-progenies.R
-This script computes the Chi-square test for all the biallelic imputed and non-imputed SNP found in the pures species progenies (A05, A07, A09, A10, E28, E31, E41, E96) according to the expected genotypic frequencies computed from the allelic frequencies and to the observed genotypic frequencies (0/0, 0/1, 1/1, 0/99, 99/99). Results for all SNP are stored in the directory prompted by the WD.output.1 defined by the user.
+This script computes the Chi-square test for all the biallelic imputed and non-imputed loci found in the pures species progenies (A05, A07, A09, A10, E28, E31, E41, E96) according to the expected genotypic frequencies computed from the allelic frequencies and to the observed genotypic frequencies (0/0, 0/1, 1/1, 0/99, 99/99). Results for all loci are stored in the directory prompted by the WD.output.1 defined by the user.
 
 3-Chi2-test-hybrid-progenies.R
-This script computes the Chi-square test for all the biallelic imputed and non-imputed SNP found in the hybrid progenies (FS16, FS19, FS20, FS22) according to the expected genotypic frequencies computed from the allelic frequencies and to the observed genotypic frequencies (0/0, 0/1, 1/1, 0/99, 99/99). Results for all SNP are stored in the directory prompted by the WD.output.1 defined by the user.
+This script computes the Chi-square test for all the biallelic imputed and non-imputed loci found in the hybrid progenies (FS16, FS19, FS20, FS22) according to the expected genotypic frequencies computed from the allelic frequencies and to the observed genotypic frequencies (0/0, 0/1, 1/1, 0/99, 99/99). Results for all loci are stored in the directory prompted by the WD.output.1 defined by the user.
 
 4-Significant-SNP-Venn-Diagrams.R
-This script subsets the files produced with scripts 1, 2 and 3 keeping the SNP with a p-value < 0.05 at the Chi-square test, and generates a stats file with the number of significant SNP. It also computes Venn diagrams for SNP and genes of the different families and adult sets. Results for all SNP are stored in the directory prompted by the WD.output.2 defined by the user.
+This script subsets the files produced with scripts 1, 2 and 3 keeping the loci with a p-value < 0.05 at the Chi-square test, and generates a stats file with the number of significant loci. It also computes Venn diagrams for SNP and genes of the different families and adult sets. Results for all loci are stored in the directory prompted by the WD.output.2 defined by the user.
 
 5-Crossing-RNAseq-data.R
-This script crosses the significant SNP shared by pure and hybrid progenies and adults with the information produced in the RNAseq study (Armendariz et al. Submitted). It also identifies the orthologs in Arabidopsis to further run the ShinyGO gene enrichment analysis. Results are stored in the directory prompted by the WD.output.2 defined by the user.
+This script crosses the significant loci shared by pure and hybrid progenies and adults with the information produced in the RNAseq study (Armendariz et al. Submitted). It also identifies the orthologs in Arabidopsis to further run the ShinyGO gene enrichment analysis. Results are stored in the directory prompted by the WD.output.2 defined by the user.
 
-6-Qrobur-linkage-groups-chromosomes.R
-This scripr produces graphics showing the position in the linkage groups/chromosomes of Q. robur of the significant SNP share by hybrid adults and by hybrid progenies. Results are stored in the directory prompted by the WD.output.3 defined by the user..
+6-Positioning-in-Qrobur-LG-chromosomes
+This script produces graphics showing the position in the linkage groups/chromosomes of Q. robur of the significant variants shared by hybrid adults and by hybrid progenies. Results are stored in the directory prompted by the WD.output.3 defined by the user.
 
 HOW TO RUN THE SCRIPTS
 
-Be sure to run first the config script (0-Dependencies.R). After doing this, it is only necessary to run the last script (6-Qrobur-linkage-groups-chromosomes.R) that has the information to call the rest of scripts.
+Be sure to run first the config script (0-Config.R). After doing this, it is only necessary to run the last script (6-Positioning-in-Qrobur-LG-chromosomes) that has the information to call the rest of scripts.
