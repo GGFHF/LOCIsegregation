@@ -51,7 +51,7 @@ R scripts (stored in WD.input.0:
 
 
 DESCRIPTION OF THE SCRIPTS
-0-Dependencies.R
+0-Config.R
 This script contains the information to install and load the following R libraries:
 dplyr, ggvenn, tidyverse, LinkageMapView
 It also sets the working directories. IMPORTANT: Run this script before running the others.
