@@ -8,7 +8,7 @@ R scripts to analyze the distortion of the mendelian segregation patterns in Q. 
 
 
 #This software has been developed by:
-
+	#  GI Desarrollo de Especies y Comunidades Leñosas (WooSP)
 	#  Dpto. Sistemas y Recursos Naturales
 	#  ETSI Montes, Forestal y del Medio Natural
 	#  Universidad Politecnica de Madrid
